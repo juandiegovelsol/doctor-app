@@ -3,13 +3,22 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import { ResponsiveAppBar } from "./components/ResponsiveAppBar";
 import "./App.css";
+import { PageSection } from "./components/PageSection";
+import { Background } from "./components/Background";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <ResponsiveAppBar />
+    <div className="App">
+      <div className="home">
+        <ResponsiveAppBar />
+        <PageSection></PageSection>
+      </div>
+      <div className="background">
+        <Background />
+      </div>
+
       {/* <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -30,7 +39,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-    </>
+    </div>
   );
 }
 
