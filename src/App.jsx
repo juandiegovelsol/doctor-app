@@ -5,19 +5,29 @@ import { ResponsiveAppBar } from "./components/ResponsiveAppBar";
 import "./App.css";
 import { PageSection } from "./components/PageSection";
 import { Background } from "./components/Background";
+import { HomeImage } from "./components/HomeImage";
+import test_img from "./assets/test.avif";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <div className="home">
+      <header className="app-header">
         <ResponsiveAppBar />
-        <PageSection></PageSection>
-      </div>
-      <div className="background">
-        <Background />
-      </div>
+      </header>
+      <main className="home">
+        <div className="content">
+          <PageSection>
+            <HomeImage img={test_img} />
+            <HomeImage img={test_img} />
+          </PageSection>
+          <PageSection isReversed={true}></PageSection>
+        </div>
+        <div className="background">
+          <Background />
+        </div>
+      </main>
 
       {/* <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">

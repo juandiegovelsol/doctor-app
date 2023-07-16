@@ -5,8 +5,8 @@ const PageSection = ({ isReversed = false, children }) => {
   return (
     <section className={`page-section ${isReversed ? "reversed" : ""}`}>
       <>{children}</>
-      <h1>Page1</h1>
-      <h1>Page2</h1>
+      {/* <h1>Image</h1>
+      <h1>Section</h1> */}
     </section>
   );
 };
