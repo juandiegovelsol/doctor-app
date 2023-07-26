@@ -6,10 +6,20 @@ import "./App.css";
 import { PageSection } from "./components/PageSection";
 import { Background } from "./components/Background";
 import { HomeImage } from "./components/HomeImage";
+import { HomeList } from "./components/HomeList";
 import test_img from "./assets/test.avif";
+import list_icon from "./assets/list.svg";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const list = [
+    "Experiencia sólida de 30 años en pediatría.",
+    "Empática y comprensiva con padres y niños.",
+    "Comunicación clara y accesible para todos.",
+    "Enfoque preventivo para la salud infantil.",
+    "Actualizada con los últimos avances médicos.",
+  ];
 
   return (
     <div className="App">
@@ -20,9 +30,11 @@ function App() {
         <div className="content">
           <PageSection>
             <HomeImage img={test_img} />
+            <HomeList title="Mi Experiencia" list={list} image={list_icon} />
+          </PageSection>
+          <PageSection isReversed={true}>
             <HomeImage img={test_img} />
           </PageSection>
-          <PageSection isReversed={true}></PageSection>
         </div>
         <div className="background">
           <Background />
