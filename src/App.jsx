@@ -7,6 +7,7 @@ import { PageSection } from "./components/PageSection";
 import { Background } from "./components/Background";
 import { HomeImage } from "./components/HomeImage";
 import { HomeList } from "./components/HomeList";
+import { Whatsapp } from "./components/Whatsapp";
 import test_img from "./assets/test.avif";
 import list_icon from "./assets/list.svg";
 
@@ -45,6 +46,7 @@ function App() {
             <HomeList title="Mi experiencia" list={list2} image={list_icon} />
           </PageSection>
           <PageSection></PageSection>
+          <Whatsapp />
         </div>
         <div className="background">
           <Background />
