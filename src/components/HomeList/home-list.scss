@@ -16,7 +16,10 @@
     font-size: 30px;
   }
   &__list {
+    /* @include flexbox(flex, column, center, center); */
     list-style-type: none;
+    max-width: 70%;
+    /* width: 100%; */
   }
   &__image {
     margin-right: 5px;

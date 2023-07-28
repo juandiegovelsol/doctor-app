@@ -14,6 +14,14 @@ function App() {
   const [count, setCount] = useState(0);
 
   const list = [
+    "Doctora con especialidad en pediatría.",
+    "Estudios profesionales en la Universidad del Cauca.",
+    "Estudios complementarios en infectología.",
+    "Apasionada por el cuidado de nuestros niños y niñas del sur occidente Colombiano.",
+    "Profesional, ética e Integral.",
+  ];
+
+  const list2 = [
     "Experiencia sólida de 30 años en pediatría.",
     "Empática y comprensiva con padres y niños.",
     "Comunicación clara y accesible para todos.",
@@ -30,11 +38,13 @@ function App() {
         <div className="content">
           <PageSection>
             <HomeImage img={test_img} />
-            <HomeList title="Mi Experiencia" list={list} image={list_icon} />
+            <HomeList title="Quien soy" list={list} image={list_icon} />
           </PageSection>
           <PageSection isReversed={true}>
             <HomeImage img={test_img} />
+            <HomeList title="Mi experiencia" list={list2} image={list_icon} />
           </PageSection>
+          <PageSection></PageSection>
         </div>
         <div className="background">
           <Background />
