@@ -8,6 +8,7 @@ import { Background } from "./components/Background";
 import { HomeImage } from "./components/HomeImage";
 import { HomeList } from "./components/HomeList";
 import { Whatsapp } from "./components/Whatsapp";
+import { Appointment } from "./components/Appointment";
 import test_img from "./assets/test.avif";
 import list_icon from "./assets/list.svg";
 
@@ -28,6 +29,7 @@ function App() {
     "Comunicación clara y accesible para todos.",
     "Enfoque preventivo para la salud infantil.",
     "Actualizada con los últimos avances médicos.",
+    "Medico docente de la Universidad del Cauca & Hospital San José.",
   ];
 
   return (
@@ -45,7 +47,9 @@ function App() {
             <HomeImage img={test_img} />
             <HomeList title="Mi experiencia" list={list2} image={list_icon} />
           </PageSection>
-          <PageSection></PageSection>
+          <PageSection>
+            <Appointment />
+          </PageSection>
           <Whatsapp />
         </div>
         <div className="background">
