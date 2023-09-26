@@ -1,0 +1,32 @@
+.appointment-button {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1976d2;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  margin: 20px 0px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #14589c;
+  }
+}
+.appointment-warning {
+  display: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 142, 142);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.visible {
+  display: block;
+}

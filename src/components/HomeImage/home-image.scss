@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.home-image {
+  @include flexbox(flex, row, center, center);
+  flex-wrap: wrap;
+  flex-grow: 1;
+  min-width: 350px;
+  max-width: 600px;
+  max-height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: transparent;
+  &__image {
+    @include flexbox(flex, row, center, center);
+    width: 100%;
+    object-fit: cover;
+  }
+}

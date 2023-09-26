@@ -1,0 +1,16 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.page-section {
+  margin-top: 10vh;
+  @include flexbox(flex, row, space-evenly, center);
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  min-height: 70vh;
+  background-color: transparent;
+}
+.reversed {
+  @include flexbox(flex, row-reverse, space-evenly, center);
+}
